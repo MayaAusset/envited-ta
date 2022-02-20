@@ -1,0 +1,68 @@
+@import '../../style/presets.scss';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+}
+.wrapper {
+  @include flex_wrapper_column;
+  background: linear-gradient(0deg, $pink, $purple 80%) no-repeat;
+  .navbar {
+    @include flex_wrapper_row;
+    background-color: inherit;
+
+    img {
+      width: 350px;
+      height: 32px;
+      margin: 10px;
+    }
+  }
+  .text_section {
+    @include flex_wrapper_column;
+    text-align: center;
+    h1 {
+      color: white;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 32px;
+      line-height: 30px;
+      margin: 2em 1em 1em 1em;
+    }
+    p {
+      color: white;
+      font-size: 15px;
+      line-height: 20.43px;
+      margin: 1em;
+    }
+  }
+  .images_section {
+    @include flex_wrapper_row;
+    width: 100%;
+    height: 500px;
+    margin-top: -6em;
+    .bg_social {
+      position: absolute;
+
+      width: 375px;
+      height: 300px;
+      z-index: 0;
+    }
+    .product_left {
+      position: absolute;
+      width: 150px;
+      height: 250px;
+      left: 0.5em;
+    }
+    .product_middle {
+      position: absolute;
+      width: 260px;
+      height: 380px;
+    }
+    .product_right {
+      position: absolute;
+      width: 150px;
+      height: 250px;
+      right: 0.5em;
+    }
+  }
+}

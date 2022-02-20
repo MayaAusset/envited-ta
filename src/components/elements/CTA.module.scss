@@ -1,0 +1,25 @@
+@import '../style/presets.scss';
+
+.cta {
+  z-index: 1;
+  button {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 221px;
+    height: 46px;
+    border: none;
+    background: linear-gradient(107.04deg, $green_secondary 48.99%, $blue_secondary 118.32%);
+    border-radius: 100px;
+    margin: 1em;
+    transition: 0.4s;
+    opacity: 1;
+  }
+}
+.cta {
+  button:hover {
+    background: linear-gradient(107.04deg, $blue_secondary 48.99%, $green_secondary 118.32%);
+    transition: 0.4s;
+    opacity: 0.9;
+  }
+}

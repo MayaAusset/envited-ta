@@ -1,10 +1,11 @@
 import React from 'react';
+import Home from './components/pages/home/Home';
 import './App.css';
 
 function App() {
   return (
     <p>
-      Cleanedup React App
+      <Home></Home>
     </p>
   );
 }
