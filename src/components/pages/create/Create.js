@@ -94,7 +94,7 @@ const Create = () => {
           <br />
         </form>
       </div>
-      <CTA /* onClick={handleFormSubmit} */>
+      <CTA>
         <Link to={'/event'} state={{ event: event }}>
           Next
         </Link>
