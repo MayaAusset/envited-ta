@@ -1,0 +1,58 @@
+@import '../../style/presets.scss';
+
+.wrapper {
+  background: linear-gradient(89.97deg, #5721c1 26.84%, #f49867 140.67%);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  h1 {
+    @include h1_style;
+    margin: 0.5em 0em 1.5em 0em;
+  }
+  .form_wrapper {
+    margin-top: 1em;
+    img {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      left: 40%;
+      margin-top: -2.5em;
+      box-shadow: 2px 2px 4px $purple;
+    }
+    form {
+      background: white;
+      border-radius: 20px;
+      padding: 3em 1em 0em 1em;
+      label {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        color: $purple;
+        font-size: 15px;
+        input {
+          color: $purple;
+          margin: 0.5em 1em;
+          padding: 10px 15px;
+          border-radius: 20px;
+          width: 80%;
+          border: none;
+          box-shadow: 2px 2px 4px $purple;
+        }
+        input::placeholder {
+          color: $purple;
+          opacity: 0.4;
+        }
+      }
+    }
+    button {
+      margin: 1em;
+    }
+  }
+}

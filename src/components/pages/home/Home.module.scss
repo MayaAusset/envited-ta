@@ -10,7 +10,6 @@
   .navbar {
     @include flex_wrapper_row;
     background-color: inherit;
-
     img {
       width: 350px;
       height: 32px;
@@ -21,18 +20,16 @@
     @include flex_wrapper_column;
     text-align: center;
     h1 {
-      color: white;
-      font-weight: 800;
-      font-style: normal;
-      font-size: 32px;
-      line-height: 30px;
+      @include h1_style;
       margin: 2em 1em 1em 1em;
     }
     p {
       color: white;
-      font-size: 15px;
-      line-height: 20.43px;
-      margin: 1em;
+      @include p_style;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
   .images_section {

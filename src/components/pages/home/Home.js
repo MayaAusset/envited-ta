@@ -1,6 +1,7 @@
 import React from 'react';
 import CTA from '../../elements/CTA';
 import styles from './Home.module.scss';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -11,8 +12,9 @@ const Home = () => {
       <div className={styles.text_section}>
         <h1>Facebook events without Facebook.</h1>
         <p>Easily host and share events with your friends across any social media.</p>
-       
-        <CTA>Create my next event</CTA>
+        <CTA>
+          <Link to="/create">🎉 Create my next event</Link>
+        </CTA>
       </div>
       <div className={styles.images_section}>
         <img src={'/images/social_media_icons_all_grouped.png'} alt="social-medias" className={styles.bg_social} />
