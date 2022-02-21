@@ -1,5 +1,7 @@
 # Envited Technical Assessment by Maya Ausset
 
+## This project must be viewed in the inspector tool, responsive mode in the width 375px (mobile view)
+
 <img width="375" alt="Screenshot 2022-02-21 at 12 16 01" src="https://user-images.githubusercontent.com/60138632/154874108-17cbc05c-9c8f-491b-91f7-48a8c5882670.png">
 
 
@@ -29,4 +31,5 @@ $ cd envited-ta
 $ npm install
 $ npm run start 
 ```
+
 You should now be good to go !
